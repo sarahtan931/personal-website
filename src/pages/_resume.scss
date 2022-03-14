@@ -203,8 +203,8 @@
         height: 95rem;
       }
 
-      @media only screen and (max-width: 580px) {
-        height: 100rem;
+      @media only screen and (max-width: 500px) {
+        height: 95rem;
       }
 }
 
@@ -227,7 +227,7 @@
 }
 
 .experience-opaque{
-    opacity: 1;
+    opacity: 100%;
 }
 .experience-box{
     display: flex;
@@ -259,7 +259,7 @@
     float: right;
     width: 80%;
     display: block;
-    opacity:100%;
+    opacity:1;
     transition:opacity 2s;
     
     @media only screen and (max-width: 500px) {
@@ -272,7 +272,7 @@
     width: 80%;
     margin-top: 18rem;
     display: block;
-    opacity:100%;
+    opacity:1;
     transition:opacity 2s;
   
     @media only screen and (max-width: 500px) {
@@ -330,7 +330,7 @@
     float: left;
     width: 80%;
     display: block;
-    opacity:100%;
+    opacity:1;
     transition:opacity 2s;
     
     @media only screen and (max-width: 500px) {
@@ -364,7 +364,7 @@
     margin-top: 18rem;
     float: left;
     width: 80%;
-    opacity:100%;
+    opacity:1;
     transition:opacity 2s;
     
     @media only screen and (max-width: 500px) {
