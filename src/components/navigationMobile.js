@@ -59,10 +59,8 @@ export default class NavigationMobile extends PureComponent {
                             duration={500}>
                             <span>Resume</span>
                         </Link>
-                        <div class='mobile-socials'>
                         <SocialsWhite></SocialsWhite>
-                        </div>
-                        <div className='line-mobile'></div>
+                        
                     </div>
                 </div>
             </div>
