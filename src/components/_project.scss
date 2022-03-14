@@ -39,7 +39,12 @@
   border-radius: 15px;
 }
 
-.background-project:hover { transform: scale(1.1); }
+.background-project:hover { 
+  transform: scale(1.1);
+  @media only screen and (max-width: 800px) {
+    transform: none;
+  }
+ }
 
 .project-title-box{
   flex-basis:37.5%;

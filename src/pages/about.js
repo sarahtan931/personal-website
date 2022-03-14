@@ -29,6 +29,7 @@ export default class about extends Component {
                 <div className="about-img-page">
                     <div class="img-description">
                         I am ...
+                        <br className='mobile-break'/> 
                         <span className="description" id="description">{this.state.text}</span></div>
                     <div className="img-box">
                         <img class="img-about" src={Cheerleading} alt="" onMouseEnter={this.handleChange("A Western Cheerleader ✨")} onMouseLeave={this.onMouseout.bind(this)} />

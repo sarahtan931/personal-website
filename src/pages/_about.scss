@@ -15,7 +15,7 @@
     }
     
       @media only screen and (max-width: 480px) {
-        min-height: 75rem;
+        min-height: 78rem;
       }
 
       @media only screen and (max-width: 350px) {
@@ -208,3 +208,9 @@
 }
 
 
+.mobile-break{
+    display: none;
+    @media only screen and (max-width: 480px) {
+       display: block;
+        }
+}
