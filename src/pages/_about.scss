@@ -1,0 +1,210 @@
+
+.about-img-page{
+    height:auto;
+    min-height: 30rem;
+    min-width: 100%;
+    width: auto;
+    position: relative;
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+
+
+    @media only screen and (max-width: 1186px) {
+        min-height: 52rem;
+    }
+    
+      @media only screen and (max-width: 480px) {
+        min-height: 75rem;
+      }
+
+      @media only screen and (max-width: 350px) {
+        min-height: 65rem;
+    }
+
+}
+
+.about-page{
+    height:auto;
+    min-height: 45rem;
+    min-width: 100%;
+    width: auto;
+    position: relative;
+    display: flex;
+    background-color: white;
+
+    
+    @media only screen and (max-width: 900px) {
+       min-height: 35rem;
+    }
+    
+}
+
+.about-background{
+    height: 80%;
+    width: 65%;
+    background-color: #D9EDF0;
+    margin-top: 5%;
+    position: relative;
+
+    @media only screen and (max-width: 1200px) {
+        background-color: white;
+    }
+
+    @media only screen and (max-width: 900px) {
+        background-color: white;
+        height: 20rem;
+    }
+
+}
+
+.img-about-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: -8%;
+    top: -8%;
+    overflow: hidden;
+
+    @media only screen and (max-width: 1200px) {
+        left: 0%;
+        top: 0%;
+    }
+  
+}
+
+.about-headshot{
+    width: 100%;
+}
+
+.about-left{
+    flex: 0 0 50%;
+    width: 100%;
+
+    @media only screen and (max-width: 900px) {
+        flex: 0 0 65%
+    }
+
+    @media only screen and (max-width: 500px) {
+        flex: 0 0 100%;
+    }
+}
+
+.about-right{
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 900px) {
+        flex: 0 0 35%;
+        justify-content: center;
+    }
+
+      
+    @media only screen and (max-width: 500px) {
+        display: none;
+    }
+}
+
+.writer{
+    display: inline;
+}
+
+.img-description{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 100;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 5rem;
+    padding-bottom: 3rem;
+
+    .description{
+        color: #31484B;
+        text-transform: initial;
+        font-size: 2rem;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret 1s step-end infinite;
+      }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+//////////////////////////////
+//IMAGE BOX COMPONENT
+.img-box{
+    margin: auto;
+    margin-bottom: 2rem;
+    max-width: 96%;
+    width: auto;
+    left: 2%;
+    bottom: 5%;
+    display: flex; 
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform .2s;
+}
+
+.img-about{
+    height: 20.5rem;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+
+    @media only screen and (max-width: 350px) {
+        height: 18rem;
+    }
+}
+
+.img-about:hover{
+    height: 20.5rem;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.1); 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.about-text{
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+
+    @media only screen and (max-width: 900px) {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    }
+}
+
+
+.about-text span{
+    color: #31484B;
+    font-size: 1.7rem;
+}
+
+

@@ -1,0 +1,170 @@
+.background-project{
+    background-color: white;
+    width: 40rem;
+    height: 20rem;
+    perspective: 1000px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+
+       
+    @media only screen and (max-width: 1100px) {
+      height: 18rem;
+      width: 35rem;
+    }
+      
+    @media only screen and (max-width: 900px) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+}
+
+.project-front{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.project-back {
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease-in-out;
+  border-radius: 15px;
+}
+
+.background-project:hover { transform: scale(1.1); }
+
+.project-title-box{
+  flex-basis:37.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-title-front{
+  text-align: center;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.project-title{
+  font-size: 1.5rem;
+  color: #000000;
+  @media only screen and (max-width: 1100px) {
+    font-size: 1.4rem;
+  }
+}
+
+.project-title-back{
+  font-size: 2.5rem;
+  line-height: 1;
+
+  @media only screen and (max-width: 1100px) {
+    font-size: 2rem;
+  }
+}
+
+.project-place{
+  font-size: 1.2rem;
+  color: #31484B;
+  @media only screen and (max-width: 1100px) {
+    font-size: 1rem;
+  }
+}
+
+.project-image{
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.project-img-box{
+  flex-basis:62.5%;
+}
+
+.btn2-span{
+  padding: 8px;
+  margin: auto;
+}
+
+.learnmore-button{
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 100px;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  color: #31484B;
+  font-size: .9rem;
+}
+
+.nav-links{
+  font-size: 25px;
+  position: absolute;
+  right: 0rem;
+  top: .5rem;
+}
+
+.project-text{
+  margin-top: .75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.tool-background{
+  background-color: #31484B;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.tool-background:hover { transform: scale(1.1); }
+
+
+.tool-writing{
+  color: white;
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  @media only screen and (max-width: 1100px) {
+    font-size: .9rem;
+  }
+}
+.all-tools{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+}
+
+.project-info{
+  height: 100%;
+}
+
+.about-project-text{
+  @media only screen and (max-width: 1100px) {
+    font-size: .9rem;
+  }
+}
+
+.proj-link{
+  text-decoration: none;
+  color:black;
+  margin-left:5px;
+  margin-right: 5px;
+}

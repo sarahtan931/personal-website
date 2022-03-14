@@ -1,0 +1,47 @@
+.skill-list-background{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+
+
+    @media only screen and (max-width: 980px) {
+        grid-template-columns: repeat(6, auto);
+      }
+
+      @media only screen and (max-width: 700px) {
+        grid-template-columns: repeat(4, auto);
+      }
+
+      @media only screen and (max-width: 350px) {
+        grid-template-columns: repeat(3, auto);
+      }
+}
+
+.skill-icon-background:hover { 
+    transform: scale(1.1); 
+    color: #D9EDF0;
+}
+
+.skill-icon-background{
+    transition: .5s ease-in-out;
+    background-color: #31484B;
+    border-radius: 10px;
+    height: 10rem;
+    width: 8rem;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4.5rem;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.skill-text{
+    font-size: 1rem;
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+}
