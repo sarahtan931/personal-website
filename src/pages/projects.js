@@ -8,8 +8,8 @@ import eHacksWebsite from '../assets/eHacksWebsiteMock.png';
 
 export default class projects extends PureComponent {
     toolsChaChing = ['JavaScript', 'HTML', 'CSS', 'Node.js', 'Express', 'Figma'];
-    toolsInTouch = ['React.js', 'Express', 'Figma']
-    toolsEhacks =  ['React.js', 'Express', 'Figma', 'MongoDB', 'Git', 'Asana', 'Node.js'];
+    toolsInTouch = ['React.js', 'Express', 'Figma', 'Python', 'Scikit Learn', 'Pandas', 'NumPy']
+    toolsEhacks =  ['React.js', 'Express', 'Figma', 'MongoDB', 'Git', 'Restful APIs', 'Node.js', 'Sass'];
     toolsTT = ['Arduino', 'C++', 'Microsoft Excel']
     toolsGame = ['C#', 'Unity', 'UML Diagrams']
 
@@ -23,19 +23,17 @@ export default class projects extends PureComponent {
                 <div className="projects-top"
                 > 
                  <Project title="eHacks Website &#10024;" about="eHacks" place="Enactus Hacks 2022" img={eHacksWebsite}
-                about1="The eHacks website is a portal for all things eHacks. It includes user accounts, applications and information on the eHacks hackathon"
-                about2=" This website was developed using good coding practices 
-                including responsive design and well documented, readable and clean code"
+                about1="eHacks is a technology and business focused Hackathon. Their website includes user accounts, applications and information on the hackathon"
+                about2=" This website was developed with the eHacks development team and includes responsive design, documentation and clean and scalable code."
                 link="https://ehacks.ca/" 
                 tools ={this.toolsEhacks}
              ></Project>
                 <Project title="InTouch &#9996;" about="Western University" place="Enactus Hacks 2020" img={InTouch}
                 about1="InTouch is an app to help university students who are affected by mental health issues.
-                 InTouch's goal is to help students make meaningful relationships and get academic support 
-                 through this virtual era. "
-                about2="Each semester a student is paired with another student, who is
+                 InTouch's goal is to help students make meaningful relationships and get academic support. Each semester a student
+                  is paired with other students who are
                 taking the same course. Our app uses a machine-learning clustering algorithm to pair students
-                 who have similar interests to create like-minded student to student connections."
+                 based on interests."
                  tools={this.toolsInTouch}
                 ></Project>
                 </div>

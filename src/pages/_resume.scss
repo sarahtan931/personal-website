@@ -196,15 +196,18 @@
 
         
     @media only screen and (max-width: 980px) {
-        height: 90rem;
+        height: 94rem;
       }
 
       @media only screen and (max-width: 700px) {
         height: 95rem;
       }
 
-      @media only screen and (max-width: 500px) {
-        height: 95rem;
+      @media only screen and (max-width: 600px) {
+        height: 98rem;
+      }
+      @media only screen and (max-width: 510px) {
+        height: 102rem;
       }
 }
 
@@ -246,7 +249,7 @@
 
 .experience-1{
     float: right;
-    width: 80%;
+    width: 90%;
     display: block;
     opacity: 0%;;
     
@@ -257,7 +260,7 @@
 
 .experience1fade{
     float: right;
-    width: 80%;
+    width: 90%;
     display: block;
     opacity:1;
     transition:opacity 2s;
@@ -269,7 +272,7 @@
 
   .experience3fade{
     float: right;
-    width: 80%;
+    width: 90%;
     margin-top: 18rem;
     display: block;
     opacity:1;
@@ -289,7 +292,7 @@
 
 .experience-3{
     float: right;
-    width: 80%;
+    width: 90%;
     margin-top: 18rem;
     display: block;
     opacity: 0%;
@@ -309,7 +312,7 @@
 .experience-2{
     margin-top: 18rem;
     float: left;
-    width: 80%;
+    width: 90%;
     display: block;
     opacity: 0%;
 
@@ -328,7 +331,7 @@
 .experience2fade{
     margin-top: 18rem;
     float: left;
-    width: 80%;
+    width: 90%;
     display: block;
     opacity:1;
     transition:opacity 2s;
@@ -347,7 +350,7 @@
 .experience-4{
     margin-top: 18rem;
     float: left;
-    width: 80%;
+    width: 90%;
     opacity: 0%;
     
     @media only screen and (max-width: 500px) {
@@ -363,7 +366,7 @@
 .experience4fade{
     margin-top: 18rem;
     float: left;
-    width: 80%;
+    width: 90%;
     opacity:1;
     transition:opacity 2s;
     

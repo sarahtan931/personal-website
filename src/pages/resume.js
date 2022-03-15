@@ -43,32 +43,34 @@ export default function Resume() {
                 <div className="skill-box">
                     <div className="skill-inner-box">
                         <div className="skill-lang">
-                            Python <FontAwesomeIcon icon={faPython} ></FontAwesomeIcon>
+                            Python 
                         </div>
                         <div className="skill">
                             <div className={isInViewport ? 'python-percent' : 'hidden'}>
                                 <div className='percent-text'>
-                                    85%
+                                <FontAwesomeIcon icon={faPython} ></FontAwesomeIcon>  95%
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="skill-inner-box">
                         <div className="skill-lang">
-                            Javascript <FontAwesomeIcon icon={faJs} ></FontAwesomeIcon>
+                            Javascript 
                         </div>
                         <div className="skill">
                             <div className={isInViewport ? 'javascript-percent' : 'hidden'}>
-                                <div className='percent-text'>90%</div></div>
+                                <div className='percent-text'>
+                                <FontAwesomeIcon icon={faJs} ></FontAwesomeIcon>  90%</div></div>
                         </div>
                     </div>
                     <div className="skill-inner-box">
                         <div className="skill-lang">
-                            C#  <FontAwesomeIcon icon={faMicrosoft} ></FontAwesomeIcon>
+                            C# 
                         </div>
                         <div className="skill">
                             <div className={isInViewport ? 'csharp-percent' : 'hidden'}>
-                                <div className='percent-text'>70%</div></div>
+                                <div className='percent-text'>
+                                <FontAwesomeIcon icon={faMicrosoft} ></FontAwesomeIcon> 85%</div></div>
                         </div>
                     </div>
                 </div>
@@ -87,7 +89,7 @@ export default function Resume() {
                                     date="May 2021 - Present"
                                     title="Software Developer Intern"
                                     place="Geotab, Oakville ON"
-                                    description1="Designed and implemented new features for a reseller portal website using SQL, C#, and Angular"
+                                    description1="Designed and implemented new features for the Geotab MyAdmin Portal using SQL, C#, and Angular"
                                     description2='Utilized test-driven development best practices to deliver high-quality maintainable code'
                                     description3='Participated in code reviews and daily standups to facilitate agile development methodologies'
                                 ></Experience>
@@ -108,8 +110,8 @@ export default function Resume() {
                                     date="June 2021 - Present"
                                     title="VP of Technology and User Experience"
                                     place="eHacks, London ON"
-                                    description1="Participated in weekly meetings to help design, implement and maintain the eHacks Website."
-                                    description2="Followed coding best practices including test-driven development, documentation and clean code to ensure that the website is robust and scalable "
+                                    description1="Provided technical leadership to incoming developers through mentorship and code reviews and guided the team towards successful project delivery whilst ensuring high standards of software quality."
+                                    description2="Collaborated with team members to plan, design, and develop the eHacks website using the MERN stack "
                                 ></Experience>
                             </div>
                             <div className={!viewPortResume4 ? 'experience-4' : 'experience4fade'} ref={resumeTargetRef4}>

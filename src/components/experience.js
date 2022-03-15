@@ -1,4 +1,6 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
 
 export default function experience(props) {
 
@@ -8,11 +10,12 @@ export default function experience(props) {
                <span className="title-resume">{props.title}</span>    <br />
                <span className="place-resume">{props.place}</span>    <br />
                 <span className="description-resume"><br />
-                {props.description1}
+                <FontAwesomeIcon icon = {faPen}></FontAwesomeIcon> {props.description1}
                 <br />
-                {props.description2}
+                <FontAwesomeIcon icon = {faPen}></FontAwesomeIcon>  {props.description2}
                 <br />
-                {props.description3}
+                {props.description3 &&
+                <FontAwesomeIcon icon = {faPen}></FontAwesomeIcon> } {props.description3}
                 </span>
             </div>
         )
