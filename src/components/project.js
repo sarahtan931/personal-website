@@ -30,7 +30,7 @@ export default function project(props) {
     }
     return (
         <div className="background-project">
-            <div className="project-front" id="project-front">
+            <div className="project-front" id="project-front" onClick={showInfo}>
                 <div className='project-title-box'>
                     <div className="project-title-front">
                         <p className="project-title">

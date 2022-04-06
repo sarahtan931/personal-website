@@ -24,7 +24,7 @@ export default class projects extends PureComponent {
                 > 
                  <Project title="eHacks Website &#10024;" about="eHacks" place="Enactus Hacks 2022" img={eHacksWebsite}
                 about1="eHacks is a technology and business focused Hackathon. Their website includes user accounts, applications and information on the hackathon"
-                about2=" This website was developed with the eHacks development team and includes responsive design, documentation and clean and scalable code."
+                about2=" This website was developed with the eHacks development team and includes responsive design, documentation and scalable code."
                 link="https://ehacks.ca/" 
                 tools ={this.toolsEhacks}
              ></Project>
@@ -33,16 +33,15 @@ export default class projects extends PureComponent {
                  InTouch's goal is to help students make meaningful relationships and get academic support. Each semester a student
                   is paired with other students who are
                 taking the same course. Our app uses a machine-learning clustering algorithm to pair students
-                 based on interests."
+                 based on common interests."
                  tools={this.toolsInTouch}
                 ></Project>
                 </div>
 
                 <div className="projects-bottom">
                 <Project title="Cha Ching  &#128184;" about="Western University" place="Hack Western 2020" img={ChaChing}
-                about1="Cha-Ching is a chore app created for Hack Western 7."
-                about2="It is aimed at making the mundane fun, whilst teaching financial literacy skills. Cha-Ching provides parents with educational
-                tools to help teach financial literacy by doing household chores. Cha-Ching incorporates the fundamental
+                about1="Cha-Ching is a chore app created for Hack Western 7. It is aimed at making the mundane fun, whilst teaching financial literacy skills. Cha-Ching provides parents with educational
+                tools to help teach financial literacy by doing household chores. This mobile application incorporates the fundamental
                 ideas of investing, loaning, and spending in a simple yet effective way."
                 link="https://devpost.com/software/cha-ching-yoh06m"
                 tools={this.toolsChaChing}
@@ -50,8 +49,7 @@ export default class projects extends PureComponent {
                 <Project title="Transit Tracer &#128654;" about="Western University" place="SheHacks 2019" img={TransitTracer}
                 about1="Transit Tracer is a fully functional user interface prototype for an LED bus
                  route indicator. Transit Tracer highlights bus stops using GPS data to improve accessibility
-                  for public transit. "
-                about2="Using the open data provided by London Transit, we created Arduino code to, in theory, 
+                  for public transit. Using the open data provided by London Transit, we created Arduino code to 
                 get the GPS location of the bus and compare it with the extracted data from London Transit."
                 link="https://devpost.com/software/transit-tracer"
                 tools ={this.toolsTT}

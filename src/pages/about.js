@@ -40,7 +40,7 @@ export default class about extends Component {
                      
                         <img class="img-about" src={Crochet} alt="" onMouseEnter={this.handleChange("An Artsy Crocheter🧶")} onMouseLeave={this.onMouseout.bind(this)} />
                       
-                        <img class="img-about" src={Plant} alt="" onMouseEnter={this.handleChange("An Plant Mom💐")} onMouseLeave={this.onMouseout.bind(this)} />
+                        <img class="img-about" src={Plant} alt="" onMouseEnter={this.handleChange("A Plant Mom💐")} onMouseLeave={this.onMouseout.bind(this)} />
                     </div>
                 </div>
             </div>
