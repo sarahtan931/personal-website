@@ -1,7 +1,7 @@
 {
   "name": "sarah-tan",
   "version": "0.1.0",
-  "homepage": "http://sarahtan931.github.io/personal-website",
+  "homepage": "",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
