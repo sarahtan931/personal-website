@@ -14,6 +14,11 @@ Deployed Version: https://sarahtan.me/
 <li>CSS</li>
 <li>SASS</li>
 
+# Design
+This website leverages responsive design and adjusts accordingly to different screen sizes. 
+
+Figma Link: https://www.figma.com/file/u5z72cQE5Z3p3OsqYxqHzq/Personal-Website?node-id=0%3A1
+
 # Running Locally
 
 Download project locally.
