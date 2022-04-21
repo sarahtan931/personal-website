@@ -25,7 +25,7 @@ export default class projects extends PureComponent {
                 <div className="projects-top"
                 >  
                 <Project title="Sarah Grace Designs🧶" about="" place="" img={SarahGraceDesigns}
-                about1="One good thing about my pandemic boredom is my new found love for crocheting and crafting. This ecommerce website combines my love for crocheting and coding and showcases my favourite personal handmade designs."
+                about1="One good thing about my pandemic boredom is my new found interest for crocheting and crafting. This ecommerce website combines my love for crocheting and coding and showcases my favourite personal handmade designs."
                  gitlink="https://github.com/sarahtan931/Sarah-Grace-Designs"
                  tools={this.toolsSGD}
                 ></Project>
