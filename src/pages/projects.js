@@ -13,7 +13,7 @@ export default class projects extends PureComponent {
     toolsEhacks =  ['React.js', 'Express', 'Figma', 'MongoDB', 'Git', 'Restful APIs', 'Node.js', 'Sass', 'JWT Auth'];
     toolsTT = ['Arduino', 'C++', 'Microsoft Excel']
     toolsGame = ['C#', 'Unity', 'UML Diagrams']
-    toolsSGD = ['React.js','Node.js', 'Express', 'Figma', 'PostgreSQL', 'AWS S3 Bucket', 'JWT Auth']
+    toolsSGD = ['React.js','Node.js', 'Express', 'Figma', 'PostgreSQL', 'AWS S3 Bucket', 'JWT Auth'];
 
     render() {
         return (
