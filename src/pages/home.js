@@ -36,7 +36,7 @@ export default class Home extends PureComponent {
                                 I am a Software Engineering Student at Western University.
                             </div>
                             <div className="text-intro2">
-                                I am passionate about empowering women through STEM and am enthusiastic about making a positive impact through technology.
+                                I am passionate about full stack development and am enthusiastic about making a positive impact through technology.
                             </div>
                             <div class="socials-bar">
                                 <Socials></Socials>
@@ -62,7 +62,7 @@ export default class Home extends PureComponent {
                         </div>
                         <p className='socials-mobile-text'>I am a fourth year Software Engineering Student at Western University. <br /><br />
 
-                            I am passionate about empowering women through STEM and am enthusiastic about making a positive impact using technology.
+                            I am passionate about full stack development and am enthusiastic about making a positive impact using technology.
                         </p>
 
                     </div>
