@@ -1,28 +1,32 @@
-.resume-experience{
+.resume-experience {
     width: 100%;
-    padding:1rem;
+    padding: 1rem;
     display: flex;
 }
 
-.img-resume{
+.img-resume {
     width: 50px;
     height: 50px;
     margin-right: 2rem;
 }
 
-.description-resume{
+.description-resume {
     font-size: 1.1rem;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 1.4rem;
+    }
 }
 
-.title-resume{
-  font-size: 1.8rem;
+.title-resume {
+    font-size: 1.8rem;
 }
 
-.date-resume{
+.date-resume {
     color: #31484B;
 }
 
-.place-resume{
+.place-resume {
     color: #31484B;
     font-size: 1.2rem;
 }
