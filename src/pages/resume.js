@@ -152,7 +152,7 @@ export default function Resume() {
                     03 EDUCATION
                 </div>
                 <div className="education-grid">
-                    <div className='education-left'>
+                    <div className='education-container education-left'>
                         <div className='education-box'>
                             <p className='education-subtitle'>
                                 <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>&nbsp;
@@ -173,21 +173,22 @@ export default function Resume() {
                             </p>
                         </div>
                     </div>
-                    <div className='study'>
-                        <p className='education-subtitle'>
-                            <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon>&nbsp;
-                            Key Area Of Study</p>
-                        <p className='class-list'>
-                            <ul>
-                                <li> Web Technologies (acheived 100%)</li>
-                                <li> Algorithms and Data Structures (achieved 100%)</li>
-                                <li> Database Management Systems</li>
-                                <li> Software Requirements and Analysis</li>
-                                <li> Software Construction</li>
-                                <li> Software Design</li>
-                            </ul>
-                        </p>
-
+                    <div className='education-container'>
+                        <div className='study'>
+                            <p className='education-subtitle'>
+                                <FontAwesomeIcon icon={faBookOpen}></FontAwesomeIcon>&nbsp;
+                                Key Area Of Study</p>
+                            <p className='class-list'>
+                                <ul>
+                                    <li> Web Technologies (acheived 100%)</li>
+                                    <li> Algorithms and Data Structures (achieved 100%)</li>
+                                    <li> Database Management Systems</li>
+                                    <li> Software Requirements and Analysis</li>
+                                    <li> Software Construction</li>
+                                    <li> Software Design</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -194,22 +194,6 @@
     background-color: white;
     position: relative;
     overflow: hidden;
-/*
-    @media only screen and (max-width: 980px) {
-        height: 125rem;
-    }
-
-    @media only screen and (max-width: 500px) {
-        height: 140rem;
-    }
-
-    @media only screen and (max-width: 450px) {
-        height: 150rem;
-    }
-
-    @media only screen and (max-width: 400px) {
-        height: 160rem;
-    }*/
 }
 
 .experience-section::before {
@@ -256,22 +240,29 @@
 }
 
 .experiencenofade {
-   // opacity: 0%;
+    // opacity: 0%;
     margin: 1rem;
     background-color: white;
     z-index: 2;
     border-radius: 15px;
+    transition: .5s ease-in-out;
 
     @media only screen and (max-width: 500px) {
         width: 100%;
     }
 }
 
+.experiencenofade:hover,
+.experiencefade:hover {
+    transform: scale(1.08);
+}
+
 .experiencefade {
-  //  opacity: 1;
-  //  transition: opacity 2s;
-  margin: 1rem;
-    background-color: white; 
+    //  opacity: 1;
+    //  transition: opacity 2s;
+    margin: 1rem;
+    transition: .5s ease-in-out;
+    background-color: white;
     z-index: 2;
     border-radius: 15px;
 
@@ -315,16 +306,23 @@
 }
 
 .education-left {
+    align-items: self-end;
+}
+
+.education-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+
+    @media only screen and (max-width: 1000px) {
+        align-items: center;
+    }
 }
+
 
 .study {
     border-radius: 15px;
     padding: 1rem;
-    height: 22rem;
     background-color: #D9EDF0;
     width: 70%;
     margin: 1rem;
