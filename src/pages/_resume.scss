@@ -1,13 +1,13 @@
 ////////////////////////////
 //RESUME
-.resume-background{
+.resume-background {
     min-height: 72rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.logo2{
+.logo2 {
     height: 140%;
     padding-left: 3rem;
     padding-top: 3rem;
@@ -19,7 +19,7 @@
     }
 }
 
-.resume-button{
+.resume-button {
     position: absolute;
     right: 12px;
     margin-top: 12px;
@@ -33,39 +33,40 @@
     }
 
 }
-.resume-header{
-    display:flex;
-    justify-content:center;
-   
+
+.resume-header {
+    display: flex;
+    justify-content: center;
+
     align-content: space-between;
     width: 100%;
 }
 
-.professional{
+.professional {
     height: auto;
     min-height: 55rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.resume-title{
+.resume-title {
     text-align: center;
     font-size: 2rem;
     margin-top: 1rem;
     font-weight: 400;
 }
 
-.title-lower{
+.title-lower {
     font-size: 1.7rem;
     color: #31484B;
 }
 
 /////////////////////////////
 //SKILL BOX
-.skill-box{
+.skill-box {
     height: 20rem;
     width: 90%;
     margin-top: 1rem;
@@ -81,13 +82,13 @@
     }
 }
 
-.skill-inner-box{
+.skill-inner-box {
     width: 100%;
     flex: 0 0 30%;
     display: flex;
 }
 
-.skill-lang{
+.skill-lang {
     flex: 0 0 15%;
     margin: auto;
     font-size: 1.5rem;
@@ -105,13 +106,13 @@
 
 
 
-.skill{
+.skill {
     flex: 0 0 85%;
     height: 50%;
     margin: auto;
 }
 
-.percent-text{
+.percent-text {
     letter-spacing: .7px;
     font-size: 1.4rem;
     padding-right: 5px;
@@ -120,14 +121,14 @@
 
 }
 
-.python-percent{
+.python-percent {
     height: 100%;
     width: 95%;
     background-color: #D9EDF0;
     text-align: right;
     border-radius: 10px;
-    padding-top:.4rem;
-   
+    padding-top: .4rem;
+
 
     transition: width 1s;
     will-change: opacity;
@@ -143,14 +144,14 @@
     transition: opacity 500ms ease-out;
     will-change: opacity;
     opacity: 1;
-  }
-  
+}
 
-.javascript-percent{
+
+.javascript-percent {
     height: 100%;
     width: 90%;
     background-color: #D9EDF0;
-    padding-top:.4rem;
+    padding-top: .4rem;
     text-align: right;
     border-radius: 10px;
 
@@ -159,11 +160,11 @@
     opacity: 1;
 }
 
-.csharp-percent{
+.csharp-percent {
     height: 100%;
     width: 85%;
     background-color: #D9EDF0;
-    padding-top:.4rem;
+    padding-top: .4rem;
     text-align: right;
     border-radius: 10px;
 
@@ -175,7 +176,7 @@
 //////////////////////////////////
 //SKILLS EXTRA
 
-.skills-extra{
+.skills-extra {
     height: auto;
     min-height: 20rem;
     font-size: 1.3rem;
@@ -188,30 +189,30 @@
 ////////////////////////////////////
 //EXPERIENCE
 
-.experience{
-    height: 80rem;
+.experience {
+    height: fit-content;
     background-color: white;
     position: relative;
     overflow: hidden;
-
-        
+/*
     @media only screen and (max-width: 980px) {
-        height: 94rem;
-      }
+        height: 125rem;
+    }
 
-      @media only screen and (max-width: 700px) {
-        height: 95rem;
-      }
+    @media only screen and (max-width: 500px) {
+        height: 140rem;
+    }
 
-      @media only screen and (max-width: 600px) {
-        height: 98rem;
-      }
-      @media only screen and (max-width: 510px) {
-        height: 102rem;
-      }
+    @media only screen and (max-width: 450px) {
+        height: 150rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+        height: 160rem;
+    }*/
 }
 
-.experience-section::before{
+.experience-section::before {
     background: url('../assets/background.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -221,177 +222,68 @@
     position: absolute;
     opacity: .1;
 }
-.experience-section{
-    position: relative; 
+
+.experience-section {
+    position: relative;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.experience-opaque{
+.experience-opaque {
     opacity: 100%;
 }
-.experience-box{
+
+.experience-box {
     display: flex;
-    width: 100%;
-    height: 90%;
-    padding-top: 2rem;
-}
-
-.experience-left{
-    flex: 0 0 50%;
-    border-right: 2.5px solid #D9EDF0;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    opacity: 1;
+    justify-content: space-around;
     height: 100%;
-    text-align: right;
-}
+    margin-bottom: 1rem;
 
-
-.experience-1{
-    float: right;
-    width: 90%;
-    display: block;
-    opacity: 0%;;
-    
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-      }
-}
-
-.experience1fade{
-    float: right;
-    width: 90%;
-    display: block;
-    opacity:1;
-    transition:opacity 2s;
-    
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-      }
-}
-
-  .experience3fade{
-    float: right;
-    width: 90%;
-    margin-top: 18rem;
-    display: block;
-    opacity:1;
-    transition:opacity 2s;
-  
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-       
-      }
-
-    @media only screen and (max-width: 400px) {
-        width: 100%; 
-        margin-top: 10rem;
+    @media only screen and (max-width: 900px) {
+        width: 80%;
     }
 
-}
-
-.experience-3{
-    float: right;
-    width: 90%;
-    margin-top: 18rem;
-    display: block;
-    opacity: 0%;
-  
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-       
-      }
-
-    @media only screen and (max-width: 400px) {
-        width: 100%; 
-        margin-top: 10rem;
-    }
-
-}
-
-.experience-2{
-    margin-top: 18rem;
-    float: left;
-    width: 90%;
-    display: block;
-    opacity: 0%;
-
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-       
-      }
-
-    @media only screen and (max-width: 400px) {
-        width: 100%; 
-        margin-top: 10rem;
+    @media only screen and (max-width: 600px) {
+        width: 90%;
     }
 }
 
+.experiencenofade {
+   // opacity: 0%;
+    margin: 1rem;
+    background-color: white;
+    z-index: 2;
+    border-radius: 15px;
 
-.experience2fade{
-    margin-top: 18rem;
-    float: left;
-    width: 90%;
-    display: block;
-    opacity:1;
-    transition:opacity 2s;
-    
     @media only screen and (max-width: 500px) {
         width: 100%;
-       
-      }
-
-    @media only screen and (max-width: 400px) {
-        width: 100%; 
-        margin-top: 10rem;
     }
 }
 
-.experience-4{
-    margin-top: 18rem;
-    float: left;
-    width: 90%;
-    opacity: 0%;
-    
+.experiencefade {
+  //  opacity: 1;
+  //  transition: opacity 2s;
+  margin: 1rem;
+    background-color: white; 
+    z-index: 2;
+    border-radius: 15px;
+
     @media only screen and (max-width: 500px) {
         width: 100%;
-      }
-
-    @media only screen and (max-width: 400px) {
-        width: 100%; 
-        margin-top: 10rem;
     }
-}
-
-.experience4fade{
-    margin-top: 18rem;
-    float: left;
-    width: 90%;
-    opacity:1;
-    transition:opacity 2s;
-    
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-      }
-
-    @media only screen and (max-width: 400px) {
-        width: 100%; 
-        margin-top: 10rem;
-    }
-}
-
-
-.experience-right{
-    flex: 0 0 50%;
-    border-left: 2.5px solid #D9EDF0;
-    height: 100%;
-    text-align: left;
 }
 
 ////////////////////////////
 //EDUCATION
-.education{
-    min-height: 100px;
+.education {
+    height: fit-content;
     overflow: hidden;
     background-color: white;
     display: flex;
@@ -400,22 +292,13 @@
     justify-content: space-between;
     padding-top: 1rem;
     width: 100%;
-
-            
-    @media only screen and (max-width: 800px) {
-        height: 55rem;
-    }
-
-              
-    @media only screen and (max-width: 450px) {
-        height: 60rem;
-    }
 }
 
-.education-grid{
+.education-grid {
     display: flex;
     width: 100%;
     justify-content: center;
+    padding-top: 1rem;
 
     @media only screen and (max-width: 1000px) {
         flex-direction: column;
@@ -423,93 +306,101 @@
     }
 }
 
-.education-box:hover { 
-    transform: scale(1.08); 
+.education-box:hover {
+    transform: scale(1.08);
 }
 
-.study:hover { 
-    transform: scale(1.08); 
+.study:hover {
+    transform: scale(1.08);
 }
 
-.education-left{
+.education-left {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
-.study{
+.study {
     border-radius: 15px;
+    padding: 1rem;
     height: 22rem;
     background-color: #D9EDF0;
-    width: 40rem;
+    width: 70%;
     margin: 1rem;
     transition: .5s ease-in-out;
 
-    @media only screen and (max-width: 450px) {
-        width: 32rem
-      }
+    @media only screen and (max-width: 900px) {
+        width: 80%;
+    }
 
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+    }
 }
 
-.education-subtitle{
+.education-subtitle {
     padding-left: 1rem;
     padding-top: .5rem;
     font-size: 2rem;
 }
 
-.class-list{
+.class-list {
     padding-left: 3rem;
     font-size: 1.4rem;
     color: #31484B;
     padding-top: 1.5rem
 }
 
-.education-info{
+.education-info {
     font-size: 1.4rem;
     color: #31484B;
     padding-left: 1.4rem;
     padding-top: .8rem;
 }
 
-.education-title{
+.education-title {
     width: 80%;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 }
 
-.education-box{
+.education-box {
+    padding: 1rem;
     border-radius: 15px;
     background-color: #D9EDF0;
-    height: 10rem;
-    width: 40rem;
+    height: auto;
+    width: 70%;
     margin: 1rem;
     transition: .5s ease-in-out;
 
-    
-    @media only screen and (max-width: 450px) {
-        width: 32rem;
-        height: 12rem;
-      }
+    @media only screen and (max-width: 900px) {
+        width: 80%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+    }
 }
 
 
 //////////////////////
 //PROJECTS
-.projects{
-    padding-top: 2rem;
+.projects {
+    padding-top: 1rem;
     height: 15rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
 }
 
-.projects-title{
+.projects-title {
     border-top: 1px solid #333;
     width: 80%;
 }
 
-.projects-button{
+.projects-button {
     margin: auto;
 }
-

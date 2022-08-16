@@ -10,7 +10,7 @@ export default function project(props) {
             return (
                 <div className='tool-background'>
                     <p className='tool-writing'>
-                    {tool}
+                        {tool}
                     </p>
                 </div>
             );
@@ -23,7 +23,7 @@ export default function project(props) {
         back.style.left = '0%';
     }
 
-    function showTitle(){
+    function showTitle() {
         var back = document.getElementById(props.title);
         back.style.left = '-100%';
 
@@ -55,18 +55,14 @@ export default function project(props) {
             <div className="project-back" id={props.title}>
                 <div className='project-info' id={props.place}>
                     <div className='nav-links'>
-                        { props.link && <a href={props.link} class="proj-link">
-                            <FontAwesomeIcon icon={faLink} ></FontAwesomeIcon> 
+                        {props.link && <a href={props.link} class="proj-link">
+                            <FontAwesomeIcon icon={faLink} ></FontAwesomeIcon>
                         </a>}
-                        { props.gitlink &&
-                        <a href={props.gitlink} class="proj-link">
-                            <FontAwesomeIcon icon={faGithub} ></FontAwesomeIcon> 
-                        </a>}
-                      <FontAwesomeIcon className='proj-link' icon={faXmarkCircle} onClick={showTitle}></FontAwesomeIcon> 
-                     
-                     
-                          
-                       
+                        {props.gitlink &&
+                            <a href={props.gitlink} class="proj-link">
+                                <FontAwesomeIcon icon={faGithub} ></FontAwesomeIcon>
+                            </a>}
+                        <FontAwesomeIcon className='proj-link' icon={faXmarkCircle} onClick={showTitle}></FontAwesomeIcon>
                     </div>
                     <div className='project-text'>
                         <div className=''>

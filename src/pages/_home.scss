@@ -188,12 +188,10 @@
 }
 
 .main-photo-mobile{
-    width: 90%;
+    width: 100%;
     height: auto;
     position: relative;
-    border-radius: 15px;
     top: 2.5%;
-    margin-top: 2rem;
 }
 
 .mobile-buttons{
@@ -206,6 +204,8 @@
 
 .socials-mobile{
 margin: 1rem;
+display: flex;
+justify-content: center;
 }
 
 .socials-mobile-text{
@@ -219,4 +219,12 @@ margin: 1rem;
     font-size: 2rem;
     color: white;
     padding-left: 1.1rem;
+}
+
+.mobile-title{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding-left: 1rem;
+    font-size: 1.6rem;
 }

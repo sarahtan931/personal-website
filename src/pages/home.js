@@ -14,7 +14,7 @@ export default class Home extends PureComponent {
                 <div className="home-page">
                     <div className="background-color">
                         <div className="background-rectangle"></div>
-                        <img src={Headshot} className="main-photo"></img>
+                        <img src={Headshot} className="main-photo" alt=""></img>
                     </div>
                     <div className="background-home">
                         <div className="intro-container">
@@ -50,22 +50,15 @@ export default class Home extends PureComponent {
                     </div>
                 </div>
                 <div className='home-mobile'>
-                    <div className="home-mobile-background">
-                        <div className='student-mobile'>
-                            Software Engineering Student
-                        </div>
+                    <div className='mobile-title'>Software Engineering Student</div>
+                    <img src={HeadshotCopy} className="main-photo-mobile" alt=""></img>
+                    <div className='socials-mobile'>
+                        <Socials></Socials>
                     </div>
-                    <div className='mobile-home-container'>
-                        <img src={HeadshotCopy} className="main-photo-mobile" alt=""></img>
-                        <div className='socials-mobile'>
-                            <Socials></Socials>
-                        </div>
-                        <p className='socials-mobile-text'>I am a fourth year Software Engineering Student at Western University. <br /><br />
+                    <p className='socials-mobile-text'>I am a fourth year Software Engineering Student at Western University. <br /><br />
 
-                            I am passionate about full stack development and am enthusiastic about making a positive impact using technology.
-                        </p>
-
-                    </div>
+                        I am passionate about full stack development and am enthusiastic about making a positive impact using technology.
+                    </p>
                     <div className='mobile-buttons'>
                         <div class="resume-btn">
                             <Button name={"resume"} link={"resume-page"}></Button>
