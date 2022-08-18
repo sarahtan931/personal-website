@@ -1,9 +1,9 @@
-import React from 'react';
+import {useEffect, useRef, useState, useMemo} from 'react';
 import Button2 from "../components/button2";
 import SkillList from '../components/skillList';
 import Experience from "../components/experience";
 import ResumePDF from "../assets/SarahTan2021.pdf";
-import { faPython, faJs, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faJs, faMicrosoft, faTs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Geotab from "../assets/Geotab.jfif";
 import Western from "../assets/Western.jpg";
@@ -11,15 +11,33 @@ import ehacks from "../assets/ehacks_logo.png";
 import westernai from "../assets/WAI.jfif";
 import google from '../assets/google.png';
 
-import useIsInViewport from 'use-is-in-viewport'
 import { faAward, faBookOpen, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 export default function Resume() {
-    const [isInViewport, targetRef] = useIsInViewport();
-    const [viewPortResume1, resumeTargetRef1] = useIsInViewport();
-    const [viewPortResume2, resumeTargetRef2] = useIsInViewport();
-    const [viewPortResume3, resumeTargetRef3] = useIsInViewport();
-    const [viewPortResume4, resumeTargetRef4] = useIsInViewport();
+    const ref1 = useRef(null);
+    const isInViewport1 = useIsInViewport(ref1);
+  
+    function useIsInViewport(ref) {
+        const [isIntersecting, setIsIntersecting] = useState(false);
+
+        const observer = useMemo(
+            () =>
+                new IntersectionObserver(([entry]) =>
+                    setIsIntersecting(entry.isIntersecting),
+                ),
+            [],
+        );
+
+        useEffect(() => {
+            observer.observe(ref.current);
+
+            return () => {
+                observer.disconnect();
+            };
+        }, [ref, observer]);
+
+        return isIntersecting;
+    }
 
     return (
         <div className="resume-background" id="resume-page">
@@ -47,7 +65,7 @@ export default function Resume() {
                             Python
                         </div>
                         <div className="skill">
-                            <div className={isInViewport ? 'python-percent' : 'hidden'}>
+                            <div ref={ref1} className={isInViewport1 ? 'python-percent' : 'hidden'}>
                                 <div className='percent-text'>
                                     <FontAwesomeIcon icon={faPython} ></FontAwesomeIcon>  95%
                                 </div>
@@ -56,12 +74,22 @@ export default function Resume() {
                     </div>
                     <div className="skill-inner-box">
                         <div className="skill-lang">
-                            Javascript
+                            JavaScript
                         </div>
                         <div className="skill">
-                            <div className={isInViewport ? 'javascript-percent' : 'hidden'}>
+                            <div ref={ref1} className={isInViewport1 ? 'javascript-percent' : 'hidden'}>
                                 <div className='percent-text'>
                                     <FontAwesomeIcon icon={faJs} ></FontAwesomeIcon>  90%</div></div>
+                        </div>
+                    </div>
+                    <div className="skill-inner-box">
+                        <div className="skill-lang">
+                            TypeScript
+                        </div>
+                        <div className="skill">
+                            <div ref={ref1} className={isInViewport1 ? 'typescript-percent' : 'hidden'}>
+                                <div className='percent-text'>
+                                    <FontAwesomeIcon icon={faMicrosoft} ></FontAwesomeIcon>  90%</div></div>
                         </div>
                     </div>
                     <div className="skill-inner-box">
@@ -69,13 +97,13 @@ export default function Resume() {
                             C#
                         </div>
                         <div className="skill">
-                            <div className={isInViewport ? 'csharp-percent' : 'hidden'}>
+                            <div className={isInViewport1 ? 'csharp-percent' : 'hidden'}>
                                 <div className='percent-text'>
                                     <FontAwesomeIcon icon={faMicrosoft} ></FontAwesomeIcon> 85%</div></div>
                         </div>
                     </div>
                 </div>
-                <div className="skills-extra" ref={targetRef}>
+                <div className="skills-extra">
                     <SkillList ></SkillList>
                 </div>
             </div>
@@ -95,7 +123,7 @@ export default function Resume() {
                                 description2='Collaborated with stakeholders, created multiple comprehensive design documents, and delivered a design presentation for new features. The presentation earned top reviews and will be used in future development. '
                             ></Experience>
                         </div>
-                        <div className={!viewPortResume1 ? 'experiencenofade' : 'experiencefade'} ref={resumeTargetRef1}>
+                        <div className='experiencenofade'>
                             <Experience
                                 date="May 2021 - Present"
                                 title="Software Developer Intern"
@@ -107,7 +135,7 @@ export default function Resume() {
                                 description3='Participated in code reviews and daily standups to facilitate agile development methodologies'
                             ></Experience>
                         </div>
-                        <div className={!viewPortResume2 ? 'experiencenofade' : 'experiencefade'} ref={resumeTargetRef2}>
+                        <div className='experiencenofade'>
                             <Experience
                                 date="June 2021 - Present"
                                 img={ehacks}
@@ -118,7 +146,7 @@ export default function Resume() {
                                 description2="Collaborated with team members to plan, design, and develop the eHacks website using the MERN stack "
                             ></Experience>
                         </div>
-                        <div className={!viewPortResume3 ? 'experiencenofade' : 'experiencefade'} ref={resumeTargetRef3}>
+                        <div className='experiencenofade'>
                             <Experience
                                 date="May 2020 - August 2020"
                                 title="Undergraduate Summer Research Intern"
@@ -130,7 +158,7 @@ export default function Resume() {
                             ></Experience>
                         </div>
 
-                        <div className={!viewPortResume4 ? 'experiencenofade' : 'experiencefade'} ref={resumeTargetRef4}>
+                        <div className='experiencenofade'>
                             <Experience
                                 date="June 2020 - May 2020"
                                 title="Director of Education"

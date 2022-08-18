@@ -67,7 +67,7 @@
 /////////////////////////////
 //SKILL BOX
 .skill-box {
-    height: 20rem;
+    height: 25rem;
     width: 90%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -84,11 +84,14 @@
 
 .skill-inner-box {
     width: 100%;
-    flex: 0 0 30%;
+    flex: 0 0 20%;
     display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .skill-lang {
+    height: auto;
     flex: 0 0 15%;
     margin: auto;
     font-size: 1.5rem;
@@ -99,8 +102,6 @@
         font-size: 1rem;
     }
 }
-
-
 
 .skill {
     flex: 0 0 85%;
@@ -143,7 +144,7 @@
 }
 
 
-.javascript-percent {
+.javascript-percent, .typescript-percent {
     height: 100%;
     width: 90%;
     background-color: #D9EDF0;
@@ -248,24 +249,11 @@
     }
 }
 
-.experiencenofade:hover,
-.experiencefade:hover {
+.experiencenofade:hover {
     transform: scale(1.04);
 }
 
-.experiencefade {
-    //  opacity: 1;
-    //  transition: opacity 2s;
-    margin: 1rem;
-    transition: .5s ease-in-out;
-    background-color: white;
-    z-index: 2;
-    border-radius: 15px;
 
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-    }
-}
 
 ////////////////////////////
 //EDUCATION
