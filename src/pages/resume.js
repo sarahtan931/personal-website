@@ -112,7 +112,7 @@ export default function Resume() {
                 <div className="experience-section">
                     <div className="resume-title">02 EXPERIENCE <br /><span className="title-lower">LEADERSHIP. TECHNICAL. WORK.</span>  </div>
                     <div className="experience-box" >
-                        <div className='experiencefade' >
+                        <div className='experiencenofade' >
                             <Experience
                                 date="May 2022 - August 2022"
                                 title="Software Engineer Intern"
