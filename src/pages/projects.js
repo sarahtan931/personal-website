@@ -5,7 +5,6 @@ import InTouch from '../assets/InTouchMockup.png';
 import TransitTracer from '../assets/TransitTracerMockup.png';
 import RacingGame from '../assets/RacingGame.png'
 import HappyPet from '../assets/HappyPet.png'
-//import CaughtInAJam from '../assets/ShumpMockup.png';
 import eHacksWebsite from '../assets/eHacksWebsiteMock.png';
 import SarahGraceDesigns from '../assets/sarahgracedesignsMockup.png';
 
