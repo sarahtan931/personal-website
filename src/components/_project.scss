@@ -1,13 +1,12 @@
 .background-project{
     background-color: white;
-    width: 40rem;
-    height: 20rem;
+    width: 44rem;
+    height: 21rem;
     perspective: 1000px;
     border-radius: 15px;
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
     transition: all .2s ease-in-out;
     overflow: hidden;
-
        
     @media only screen and (max-width: 1100px) {
       height: 18rem;
@@ -68,7 +67,7 @@
 }
 
 .project-title-back{
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 1;
 
   @media only screen and (max-width: 1100px) {

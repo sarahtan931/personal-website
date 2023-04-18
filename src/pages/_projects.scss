@@ -1,5 +1,5 @@
 .projects-background{
-    min-height: 70rem;
+    min-height: 72rem;
     max-width: 100%;
     background-color: #D9EDF0;
     display: flex;
@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-around;
     position: relative;
+    padding-bottom: 2rem;
 
     
     @media only screen and (max-width: 900px) {
